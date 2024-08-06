@@ -8,7 +8,7 @@ export default function Sidebar() {
         <div className="w-1/4 h-full flex justify-center items-center flex-col border-r-[1px] border-gray-200">
             {itemSiderbar.map((item) => (
                 <div key={item.id} className="w-full h-12 flex items-center justify-center">
-                    <p>{item.title}</p>
+                    <p className="w-full text-center">{item.title}</p>
                 </div>
             ))}
         </div>

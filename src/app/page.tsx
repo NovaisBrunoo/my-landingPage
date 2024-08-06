@@ -1,6 +1,7 @@
 import Banner from "@/components/Banner/page";
 import Header from "@/components/Header/page";
 import Navbar from "@/components/Navbar/page";
+import PromotionProduct from "@/components/Promotion/page";
 import Sidebar from "@/components/sidebar/page";
 
 export default function Home() {
@@ -12,6 +13,11 @@ export default function Home() {
         <Sidebar />
         <Banner />
       </section>
+      <section className="w-full h-full flex justify-center items-center flex-col mt-32 px-24 mb-3">
+        <PromotionProduct />
+        <button className="w-32 h-16 flex justify-center items-center rounded-md bg-[#DB4444] text-white font-bold">Load More</button>
+      </section>
+
     </main>
   );
 }
