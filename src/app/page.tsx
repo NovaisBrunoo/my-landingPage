@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner/page";
+import Footer from "@/components/Footer/page";
 import Header from "@/components/Header/page";
 import Navbar from "@/components/Navbar/page";
 import PromotionProduct from "@/components/Promotion/page";
@@ -13,11 +14,11 @@ export default function Home() {
         <Sidebar />
         <Banner />
       </section>
-      <section className="w-full h-full flex justify-center items-center flex-col mt-32 px-24 mb-3">
+      <section className="w-full h-full flex justify-center items-center flex-col mt-32 mb-32 px-24 ">
         <PromotionProduct />
-        <button className="w-32 h-16 flex justify-center items-center rounded-md bg-[#DB4444] text-white font-bold">Load More</button>
+        <button className="w-32 h-16 mt-10 flex justify-center items-center rounded-md bg-[#DB4444] text-white font-bold">Load More</button>
       </section>
-
+      <Footer />
     </main>
   );
 }
